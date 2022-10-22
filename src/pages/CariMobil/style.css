@@ -1,0 +1,104 @@
+.row .cari {
+    margin-top: -40px !important    ;
+    z-index: 2;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 90% ;
+    margin: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    z-index: 30000 !important ;
+}
+
+.cari h3 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 4px
+}
+
+
+.cari .cariitem {
+    padding: 20px 8px;
+}
+
+.cari .cariitem ::placeholder {
+    font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+}
+
+.cariitem h4 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.withbtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.withbtn .btn {
+    border: none;
+    margin-left: 16px;
+    background: #5CB85F;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5.5px 12px;
+    width: 92px;
+    height: fit-content;
+}
+
+.boxselect .option {
+    padding: 30px;
+}
+
+
+.cariitem .boxselect .selecttext {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.cariitem .boxselect .pilihan {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.overlay-bg-desktop {
+    position: fixed;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 2;
+
+}
+
+.overlay-bg-desktop.menu-active{
+        opacity: 1;
+        visibility: visible;
+        z-index: 1 ;
+    }
+
+
+@media (max-wdth:540px) {
+    .row .cari {
+        width: 100%;
+    }
+}

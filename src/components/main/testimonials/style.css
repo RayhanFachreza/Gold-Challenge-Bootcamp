@@ -1,0 +1,73 @@
+.testimonial {
+    padding-bottom: 20px;
+}
+
+.testi h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.testi p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.box-testimonial {
+    width: 600px !important;
+    /* height: 270px !important; */
+    padding: 69px 32px 69px 45px;
+    background: #F1F3FF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+}
+
+.boxflex {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-testimonial .boxgambar  {
+    display: flex;
+    align-items: center;
+}
+
+.box-testimonial .boxtext {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-testimonial h4{ 
+    margin: 8px 0px;
+    font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+}
+
+.box-testimonial h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.slick-slide > div {
+  margin: 0 10px !important;
+}
+.slick-list {
+  margin: 0 -10px !important;
+}
+
+
+
+@media (max-width:540px) {
+    .testimonial {
+        padding-top: 0px;
+    }
+
+
+}

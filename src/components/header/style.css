@@ -1,0 +1,134 @@
+.head {
+    width: 100%;
+    position: fixed;
+    padding: 24px 0;
+    background-color: #F1F3FF;
+    z-index: 1;
+}
+
+.overlay-bg {
+    display: none;
+}
+
+.kanan {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: max-content;
+}
+
+.logo {
+    width: 100px !important;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 12px;
+    text-align: center;
+}
+
+.top-sidebar {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+
+
+
+@media (max-width:540px) {
+    
+
+    .logo {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .top-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sidebar.menu-active {
+        right: 0 ;
+    }
+    .sidebar {
+        position: absolute;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        width: 180px;
+        top: 0;
+        right: -180px;
+        height: 100vh;
+        padding: 25px 15px;
+        z-index: 5;
+        transition: 0.3s;
+      }
+
+   
+    .overlay-bg {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    .overlay-bg.menu-active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu {
+        margin-top: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+      }
+
+    .menu li a { 
+        margin: 8px 0;
+        color: black;
+        display: block;
+        width: fit-content;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0px ;
+        text-align: left;
+        margin-left: 0;
+    }
+
+
+}   

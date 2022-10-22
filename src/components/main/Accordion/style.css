@@ -1,0 +1,17 @@
+.judul h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.box {
+    border: none !important;
+    z-index: 0;
+}
+
+.boxbaru {
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+    z-index: 0;
+}
+
