@@ -130,5 +130,10 @@
         margin-left: 0;
     }
 
-
 }   
+
+@media (max-width:996px) {
+    .menu {
+        margin: 0px;
+    }
+}

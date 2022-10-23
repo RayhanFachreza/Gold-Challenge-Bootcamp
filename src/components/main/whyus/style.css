@@ -15,8 +15,8 @@
     margin-top: 16px;
 }
 
-.whyus h3 {
-    margin-top: 16px;
+.why h3 {
+    margin: 15px 0px;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -25,15 +25,17 @@
 
 .whyus .container .poinmengapa {
     margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex: 1;
     justify-content: space-between;
 }
 
-.why1, .why2, .why3, .why4 {
+.why {
     padding: 24px;
     border: 1px solid #D0D0D0;
     border-radius: 8px;
+    margin: auto;
 }
 
 @media (max-width:540px) {
@@ -46,10 +48,17 @@
         text-align: center;
     }
 
-    .why1    {
-    margin: 0px 8px 8px 8px;
-}
-    .why2, .why3, .why4 {
+    .why {
     margin: 8px;
     }
+}
+
+@media (max-width:996px) {
+    .why {
+        margin: 16px;
+    }
+    .whyus {
+        padding-bottom: 30px    ;
+    }
+
 }

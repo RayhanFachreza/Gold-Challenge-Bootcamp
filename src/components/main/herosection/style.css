@@ -6,7 +6,6 @@
     
 }
 
-
 .hero-kiri {
     padding-top: 40px;
 }
@@ -15,16 +14,10 @@
     width: 100%;
 }
 
-
-.heroimage {
-    width: min-content;
-}
-
 .hero-kanan {
     display: flex;
     max-width: w;
 }
-
 
 .hero-kiri h1 {
     font-weight: 700;

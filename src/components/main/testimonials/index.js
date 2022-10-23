@@ -3,10 +3,57 @@ import "./style.css";
 import Testi1 from "./assets/testi1.png";
 import Testi2 from "./assets/testi2.png";
 import Bintang from "./assets/bintang.png";
+import Left from "./assets/Left button.svg";
+import Right from "./assets/Right button.svg";
 // import React, { Component } from "react";
 import Slider from "react-slick";
 
 const Testimonials = () => {
+  var settings = {
+    dots: false,
+    infinite: true,
+    centerMode: true,
+    speed: 500,
+    // centerPadding: "20px",
+    centerPadding: "350px",
+    // slidesToShow: 2.33,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    nextArrow: <img src={Right} alt="" title="Next" />,
+    prevArrow: <img src={Left} alt="" title="Previos" />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          centerPadding: "180px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          centerPadding: "100px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerPadding: "10px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className="testimonial" id="testimonials">
       <div className="container">
@@ -14,99 +61,97 @@ const Testimonials = () => {
           <h2>Testimonial</h2>
           <p>Berbagai review positif dari para pelanggan kami</p>
         </div>
-        {/*  */}
       </div>
+      {/*  */}
 
       <div className="carousel">
-        {/* <Slider {...settings}> */}
-        <div className="box-testimonial">
-          <div className="row">
-            <div className="col-lg-3 boxgambar">
-              <div className="gambar-testi">
-                <img src={Testi1} alt="" />
+        <Slider {...settings}>
+          <div className="box-testimonial">
+            <div className="row">
+              <div className="col-lg-3 boxgambar">
+                <div className="gambar-testi">
+                  <img src={Testi1} alt="" />
+                </div>
               </div>
-            </div>
-            <div className="col-lg-9 boxtext">
-              <div>
-                <img src={Bintang} alt="" />
+              <div className="col-lg-9 boxtext">
+                <div className="bintang">
+                  <img src={Bintang} alt="" />
+                </div>
+                <h4>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </h4>
+                <h3>John Dee 32, Bromo</h3>
               </div>
-              <h4>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod”
-              </h4>
-              <h3>John Dee 32, Bromo</h3>
             </div>
           </div>
-        </div>
-        {/* asda */}
-        <div className="box-testimonial">
-          <div className="row">
-            <div className="col-lg-3 boxgambar">
-              <div className="gambar-testi">
-                <img src={Testi2} alt="" />
+          <div className="box-testimonial">
+            <div className="row">
+              <div className="col-lg-3 boxgambar">
+                <div className="gambar-testi">
+                  <img src={Testi2} alt="" />
+                </div>
               </div>
-            </div>
-            <div className="col-lg-9 boxtext">
-              <div>
-                <img src={Bintang} alt="" />
+              <div className="col-lg-9 boxtext">
+                <div className="bintang">
+                  <img src={Bintang} alt="" />
+                </div>
+                <h4>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </h4>
+                <h3>John Dee 32, Bromo</h3>
               </div>
-              <h4>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod”
-              </h4>
-              <h3>John Dee 32, Bromo</h3>
             </div>
           </div>
-        </div>
-        {/* sada */}
-        <div className="box-testimonial">
-          <div className="row boxflex">
-            <div className="col-lg-3 boxgambar">
-              <div className="gambar-testi">
-                <img src={Testi1} alt="" />
+          <div className="box-testimonial">
+            <div className="row boxflex">
+              <div className="col-lg-3 boxgambar">
+                <div className="gambar-testi">
+                  <img src={Testi1} alt="" />
+                </div>
               </div>
-            </div>
-            <div className="col-lg-9 boxtext">
-              <div>
-                <img src={Bintang} alt="" />
+              <div className="col-lg-9 boxtext">
+                <div className="bintang">
+                  <img src={Bintang} alt="" />
+                </div>
+                <h4>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </h4>
+                <h3>John Dee 32, Bromo</h3>
               </div>
-              <h4>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod”
-              </h4>
-              <h3>John Dee 32, Bromo</h3>
             </div>
           </div>
-        </div>
-        {/* batas */}
-        <div className="box-testimonial">
-          <div className="row">
-            <div className="col-lg-3 boxgambar">
-              <div className="gambar-testi">
-                <img src={Testi2} alt="" />
+          <div className="box-testimonial">
+            <div className="row">
+              <div className="col-lg-3 boxgambar">
+                <div className="gambar-testi">
+                  <img src={Testi2} alt="" />
+                </div>
               </div>
-            </div>
-            <div className="col-lg-9 boxtext">
-              <div>
-                <img src={Bintang} alt="" />
+              <div className="col-lg-9 boxtext">
+                <div className="bintang">
+                  <img src={Bintang} alt="" />
+                </div>
+                <h4>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod”
+                </h4>
+                <h3>John Dee 32, Bromo</h3>
               </div>
-              <h4>
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod”
-              </h4>
-              <h3>John Dee 32, Bromo</h3>
             </div>
           </div>
-        </div>
-        {/* </Slider> */}
+        </Slider>
+        <div className="button-slider"></div>
       </div>
     </section>
   );

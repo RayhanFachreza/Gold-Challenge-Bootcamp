@@ -17,7 +17,7 @@ const Whyus = () => {
         </div>
         <div className="row poinmengapa">
           <div className="col-lg-3 col-xl-3 col-md-6">
-            <div className="why1">
+            <div className="why">
               <img src={why1} alt="" />
               <h3>Mobil Lengkap</h3>
               <p>
@@ -27,7 +27,7 @@ const Whyus = () => {
             </div>
           </div>
           <div className="col-lg-3 col-xl-3 col-md-6">
-            <div className="why2">
+            <div className="why">
               <img src={why2} alt="" />
               <h3>Harga Murah</h3>
               <p>
@@ -37,7 +37,7 @@ const Whyus = () => {
             </div>
           </div>
           <div className="col-lg-3 col-xl-3 col-md-6">
-            <div className="why3">
+            <div className="why">
               <img src={why3} alt="" />
               <h3>Layanan 24 Jam</h3>
               <p>
@@ -47,7 +47,7 @@ const Whyus = () => {
             </div>
           </div>
           <div className="col-lg-3 col-xl-3 col-md-6">
-            <div className="why4">
+            <div className="why">
               <img src={why4} alt="" />
               <h3>Sopir Profesional</h3>
               <p>
