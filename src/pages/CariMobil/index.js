@@ -24,59 +24,66 @@ const CariMobil = () => {
       <div className="container">
         <div className="row">
           <div className="cari" onClick={() => setVisible(true)}>
-            <div className="col-sm-6 col-lg-3 cariitem">
-              <h3>Nama Mobil</h3>
-              <Form.Control
-                size="sm"
-                type="text"
-                placeholder="Ketik nama/tipe mobil"
-              />
-            </div>
-            <div className="col-sm-6 col-lg-3 cariitem">
-              <h3>Kategori</h3>
-              <div className="boxselect">
-                <Form.Select
-                  aria-label="Default select example"
-                  className="selecttext"
-                >
-                  <option hidden>Masukkan Kapasitas Mobil </option>
-                  <option value="1"> 2 - 4 Orang </option>
-                  <option value="2"> 4 - 6 Orang </option>
-                  <option value="3"> 6 - 8 Orang </option>
-                </Form.Select>
+            <div className="col-lg-6 cari1">
+              <div className="col-sm-6 col-lg-6 cariitem">
+                <h3>Nama Mobil</h3>
+                <div className="boxselect">
+                  <Form.Control
+                    size="sm"
+                    type="text"
+                    placeholder="Ketik nama/tipe mobil"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="col-sm-6 col-lg-3 cariitem">
-              <h3>Harga</h3>
-              <div className="boxselect">
-                <Form.Select
-                  aria-label="Default select example"
-                  className="selecttext"
-                >
-                  <option hidden>Masukkan Harga Sewa per Hari </option>
-                  <option value="1"> Rp. 400.000 </option>
-                  <option value="2"> Rp. 400.000 - Rp. 600.000</option>
-                  <option value="3"> Rp. 400.000 </option>
-                </Form.Select>
-              </div>
-            </div>
-            <div className="col-sm-6 col-lg-3 cariitem">
-              <h3>Status</h3>
-              <div className="withbtn">
+              <div className="col-sm-6 col-lg-6 cariitem">
+                <h3>Kategori</h3>
                 <div className="boxselect">
                   <Form.Select
                     aria-label="Default select example"
                     className="selecttext"
                   >
-                    <option hidden>Status </option>
+                    <option hidden>Masukkan Kapasitas Mobil </option>
+                    <option value="1"> 2 - 4 Orang </option>
+                    <option value="2"> 4 - 6 Orang </option>
+                    <option value="3"> 6 - 8 Orang </option>
+                  </Form.Select>
+                </div>
+              </div>
+            </div>
+            {/* gap */}
+            <div className="col-lg-6 cari1">
+              <div className="col-sm-6 col-lg-6 cariitem">
+                <h3>Harga</h3>
+                <div className="boxselect">
+                  <Form.Select
+                    aria-label="Default select example"
+                    className="selecttext"
+                  >
+                    <option hidden>Masukkan Harga Sewa per Hari </option>
                     <option value="1"> Rp. 400.000 </option>
                     <option value="2"> Rp. 400.000 - Rp. 600.000</option>
                     <option value="3"> Rp. 400.000 </option>
                   </Form.Select>
                 </div>
-                <Link to="/hasil-pencarian" className="tombolcari">
-                  <Button>Cari Mobil</Button>
-                </Link>
+              </div>
+              <div className="col-sm-6 col-lg-6 cariitem">
+                <h3>Status</h3>
+                <div className="withbtn">
+                  <div className="boxselect">
+                    <Form.Select
+                      aria-label="Default select example"
+                      className="selecttext"
+                    >
+                      <option hidden>Status </option>
+                      <option value="1"> Rp. 400.000 </option>
+                      <option value="2"> Rp. 400.000 - Rp. 600.000</option>
+                      <option value="3"> Rp. 400.000 </option>
+                    </Form.Select>
+                  </div>
+                  <Link to="/hasil-pencarian" className="tombolcari">
+                    <Button>Cari Mobil</Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

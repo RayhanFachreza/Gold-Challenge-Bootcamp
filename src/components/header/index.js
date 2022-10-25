@@ -36,24 +36,16 @@ const Header = () => {
               </div>
               <ul className="menu">
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                    Our Services
-                  </a>
+                  <a href="#ourservices">Our Services</a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                    Why Us
-                  </a>
+                  <a href="#whyus ">Why Us</a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                    Testimonials
-                  </a>
+                  <a href="#testimonials">Testimonials</a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                    FAQ
-                  </a>
+                  <a href="#faq">FAQ</a>
                 </li>
               </ul>
             </div>

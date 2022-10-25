@@ -1,5 +1,6 @@
 .faq {
-    padding-bottom: 0   px;
+    padding-top: 100px;
+    padding-bottom: 10px;
 }
 
 
@@ -17,6 +18,12 @@
 }
 
 @media (max-width:540px) {
+    .faq {
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    
+    
     .accordioncomponent{
         padding-top: 40px;
     }

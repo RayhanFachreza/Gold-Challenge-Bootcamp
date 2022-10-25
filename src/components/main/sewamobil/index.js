@@ -14,11 +14,7 @@ const SewaMobil = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
-              <Link
-                to="/detail-paket-sewa-mobil"
-                className="btn btn-primary"
-                role="button"
-              >
+              <Link to="/detail-paket-sewa-mobil" className="btn" role="button">
                 Mulai Sewa Mobil
               </Link>
             </div>
