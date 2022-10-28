@@ -4,12 +4,13 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    width: 90% ;
+    width: 90%;
     margin: auto;
     padding: 24px;
     display: flex;
     flex-direction: row;
-    z-index: 30000 !important ;
+    z-index: 30000 !important;
+    margin-bottom: 50px;
 }
 
 .cari h3 {
@@ -26,8 +27,8 @@
 
 .cari .cariitem ::placeholder {
     font-weight: 300;
-font-size: 12px;
-line-height: 18px;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .cariitem h4 {
@@ -90,11 +91,11 @@ line-height: 18px;
 
 }
 
-.overlay-bg-desktop.menu-active{
-        opacity: 1;
-        visibility: visible;
-        z-index: 1 ;
-    }
+.overlay-bg-desktop.menu-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
 
 .cari1 {
     display: flex;
@@ -103,29 +104,88 @@ line-height: 18px;
 
 
 
+.cardsection {
+    color: black;
+}
+
+
+.cardsection h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    align-self: stretch;
+}
+
+.cardsection h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cardsection .card-text {
+    font-weight: 700;
+    font-size: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.cardsection .btn {
+    background-color: #5CB85F;
+    border-radius: 2px;
+    height: 48px;
+    gap: 12px;
+    padding: 8px 12px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.card {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+
+.card img {
+    object-fit: fill;
+    padding: 20px;
+}
+
+
 
 @media (max-width:996px) {
     .row .cari {
         width: 90%;
         display: flex;
         flex-direction: column;
-        margin-top: -5px ;
+        margin-top: -5px;
     }
 
 }
 
-    @media (max-width:540px) {
-        .row .cari {
-            margin-top: -35px;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-    
-        .cari1 {
-            flex-direction: column;
-        }
-
-               
+@media (max-width:540px) {
+    .row .cari {
+        margin-top: -35px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
     }
+
+
+    .cari1 {
+        flex-direction: column;
+    }
+
+
+}
