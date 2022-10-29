@@ -10,6 +10,7 @@ import axios from "axios";
 
 const CariMobil = () => {
   const [visible, setVisible] = useState(false);
+  // const [cariActive,setCariActive] = useState(false);
 
   const [cars, setCars] = useState([]);
   const [name, setName] = useState("");
@@ -21,7 +22,7 @@ const CariMobil = () => {
 
   const handlePrice = (e) => {
     const val = e.target.value;
-    if (val === "1") {
+    if (val === "1") {  
       setMinPrice(0);
       setMaxPrice(399999);
     }
@@ -66,7 +67,7 @@ const CariMobil = () => {
       {/* !!! Batas !!! */}
       <div className="container">
         <div className="row">
-          <div className="cari" onClick={() => setVisible(true)}>
+          <div className={`cari ${visible ? "cari-active" : ""}`} onClick={() => setVisible(true)}>
             <div className="col-lg-6 cari1">
               <div className="col-sm-6 col-lg-6 cariitem">
                 <h3>Nama Mobil</h3>

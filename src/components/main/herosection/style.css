@@ -2,36 +2,40 @@
     max-width: 100%;
     width: 100%;
     padding-top: 100px;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
     background-color: #F1F3FF;
-    
+
 }
 
 .hero-kiri {
     padding-top: 40px;
 }
 
-.hero-kanan img{
+.hero-kanan {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    right: 0;
+
+}
+
+.hero-kanan img {
     width: 100%;
 }
 
-.hero-kanan {
-    display: flex;
-    max-width: w;
-}
 
 .hero-kiri h1 {
     font-weight: 700;
-font-size: 36px;
-line-height: 150%;
-margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 150%;
+    margin-bottom: 16px;
 }
 
 .hero-kiri p {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 16px ;
+    margin-bottom: 16px;
 }
 
 .hero-kiri .btn {
@@ -57,16 +61,46 @@ margin-bottom: 16px;
 }
 
 
-@media (max-width:540px){
+@media (max-width:996px) {
     .hero {
-        padding-top: 35px;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .hero-kiri h1 {
+        font-size: 32px;
+    }
+
+    .hero-kiri {
+        padding-top: 20px;
+    }
+
+    .hero-kanan {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        /* bottom: 0px; */
+    }
+}
+
+@media (max-width:768px) {
+    .hero {
+        padding-top: 75px;
+        padding-bottom: 0px;
+    }
+
+    .hero-kanan {
+        width: 100%;
     }
 
     .hero-kiri .btn {
         margin-bottom: 24px;
     }
-    .heroimage{
-        max-width: 100%;
 
+    .heroimage {
+        max-width: 100%;
     }
+
+
 }

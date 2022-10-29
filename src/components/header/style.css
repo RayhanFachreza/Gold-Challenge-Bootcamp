@@ -59,7 +59,7 @@
 
 
 @media (max-width:540px) {
-    
+
 
     .logo {
         display: none;
@@ -78,8 +78,10 @@
     }
 
     .sidebar.menu-active {
-        right: 0 ;
+        right: 0;
+        z-index: 100 !important;
     }
+
     .sidebar {
         position: absolute;
         background: #ffffff;
@@ -91,9 +93,9 @@
         padding: 25px 15px;
         z-index: 5;
         transition: 0.3s;
-      }
+    }
 
-   
+
     .overlay-bg {
         position: absolute;
         width: 100vw;
@@ -106,18 +108,20 @@
         visibility: hidden;
         transition: 0.3s;
     }
-    .overlay-bg.menu-active{
+
+    .overlay-bg.menu-active {
         opacity: 1;
         visibility: visible;
     }
+
     .menu {
         margin-top: 8px;
         flex-direction: column;
         align-items: flex-start;
         margin-right: 0;
-      }
+    }
 
-    .menu li a { 
+    .menu li a {
         margin: 8px 0;
         color: black;
         display: block;
@@ -125,12 +129,12 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-        padding: 0px ;
+        padding: 0px;
         text-align: left;
         margin-left: 0;
     }
 
-}   
+}
 
 @media (max-width:996px) {
     .menu {
