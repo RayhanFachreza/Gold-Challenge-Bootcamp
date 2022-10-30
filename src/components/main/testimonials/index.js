@@ -3,13 +3,14 @@ import "./style.css";
 import Testi1 from "./assets/testi1.png";
 import Testi2 from "./assets/testi2.png";
 import Bintang from "./assets/bintang.png";
-import Left from "./assets/Left button.svg";
-import Right from "./assets/Right button.svg";
+// import Left from "./assets/Left button.svg";
+// import Right from "./assets/Right button.svg";
 // import React, { Component } from "react";
 import Slider from "react-slick";
 
 const Testimonials = () => {
-  var settings = {
+ 
+  const settings = {
     dots: false,
     infinite: true,
     centerMode: true,
@@ -20,8 +21,11 @@ const Testimonials = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    nextArrow: <img src={Right} alt="" title="Next" />,
-    prevArrow: <img src={Left} alt="" title="Previous" />,
+    arrow:true,
+    // nextArrow: <img src={Right} alt="" title="Next" />,
+    nextArrow: <div className="arrowkiri"/>,
+    prevArrow: <div className="arrowkanan"/>,
+    // prevArrow: <img src={Left} alt="" title="Previous" />,
     responsive: [
       {
         breakpoint: 1024,

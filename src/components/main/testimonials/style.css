@@ -75,8 +75,16 @@
   right: 48%;
   display: block !important;
   margin-top: 23px;
-  width: ;
 }
+
+.slick-prev:before {
+  color: #5CB85F !important;
+}
+
+.slick-next:before {
+  color: #5CB85F !important;
+}
+
 
 
 .slick-slide>div {
