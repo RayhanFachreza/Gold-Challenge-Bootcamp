@@ -75,6 +75,12 @@
     .top-sidebar {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 18px;
+    }
+
+    .top-sidebar a {
+        display: flex;
+        align-items: center;
     }
 
     .sidebar.menu-active {

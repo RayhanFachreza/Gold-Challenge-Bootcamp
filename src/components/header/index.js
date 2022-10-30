@@ -15,12 +15,14 @@ const Header = () => {
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div className="logo">
-              <Link to="/">
+              <a href="/">
                 <img src={Logo} alt="" />
-              </Link>
+              </a>
             </div>
             <div className="burger">
+            <a href="/">
               <img src={Logo} alt="" />
+            </a>
               <img onClick={() => setSideVisible(true)} src={Burger} alt="" />
             </div>
           </div>
@@ -31,7 +33,9 @@ const Header = () => {
           <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 kanan">
             <div className={`sidebar ${sideVisible ? "menu-active" : ""}`}>
               <div className="top-sidebar">
+                <a href="/">
                 <img src={Bcr} alt="" />
+                </a>
                 <img onClick={() => setSideVisible(false)} src={Close} alt="" />
               </div>
               <ul className="menu">

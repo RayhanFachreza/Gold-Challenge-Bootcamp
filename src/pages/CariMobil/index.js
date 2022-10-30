@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Herosection from "../../components/main/herosection";
 import "./style.css";
 import Form from "react-bootstrap/Form";
@@ -10,9 +10,11 @@ import axios from "axios";
 
 const CariMobil = () => {
   const [visible, setVisible] = useState(false);
+  // const [isSearch, setIsSearch] = useState(false);
   // const [cariActive,setCariActive] = useState(false);
 
   const [cars, setCars] = useState([]);
+
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
   const [minPrice, setMinPrice] = useState(null);
@@ -23,16 +25,16 @@ const CariMobil = () => {
   const handlePrice = (e) => {
     const val = e.target.value;
     if (val === "1") {  
-      setMinPrice(0);
+      setMinPrice(null);
       setMaxPrice(399999);
     }
-    else if (val === "2") {
+    if (val === "2") {
       setMinPrice(400000);
       setMaxPrice(600000);
     }
-    else if (val === "3") {
+    if (val === "3") {
       setMinPrice(600001);
-      setMaxPrice(2000000);
+      setMaxPrice(null);
     }
   };
   const handleSubmit = () => {
@@ -50,9 +52,20 @@ const CariMobil = () => {
       .then((res) => {
         setCars(res.data.cars);
         setVisible(false);
+        // setIsSearch(true);
       })
       .catch((err) => console.log(err));
   };
+
+
+  useEffect (()=> {
+    axios.get(`${process.env.REACT_APP_API_URL}/customer/v2/car`)
+      .then((res) => {
+        setCars(res.data.cars);
+      })
+      .catch((err) => console.log(err));
+  } , []  )
+
 
   return (
     <section className="carimobil">
@@ -127,7 +140,7 @@ const CariMobil = () => {
                     </Form.Select>
                   </div>
                   <div className="tombolcari">
-                    <Button onClick={() => handleSubmit()}>Cari Mobil</Button>
+                    <Button onClick={() => handleSubmit()}> Cari Mobil </Button>
                   </div>
                 </div>
               </div>
@@ -148,11 +161,13 @@ const CariMobil = () => {
                       {`${car.price.toLocaleString("id-ID", {style:"currency", currency:"IDR"})}  / hari`}
 
                       </h4>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At nostrum eveniet culpa rerum, non dolorem reiciendis recusandae vero. Esse, maiores?</p>
-                    <div className="d-grid gap-2">
-                      <button className="btn btn-" type="button">
-                        Pilih Mobil
-                      </button>
+                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div className="d-grid gap-2 pilihcar">
+                      {/* <button className="btn btn-" type="button"> */}
+                        <Link to={`/sewa-mobil/${car.id}`} className="btn btn-" type="button"><p>Pilih Mobil</p></Link>
+
+                        {/* <a href={`/sewa-mobil/${car.id}`}>Pilih Mobil</a> */}
+                      {/* </button> */}
                     </div>
                   </div>
                 </div>

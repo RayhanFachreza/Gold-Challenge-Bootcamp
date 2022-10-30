@@ -13,24 +13,24 @@ function Footer() {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="kontak">
-                <h3>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</h3>
-                <h3>binarcarrental@gmail.com</h3>
-                <h3>081-233-334-808</h3>
+                <h3> Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</h3>
+                <h3><a href="mailto:binarcarrental@gmail.com">binarcarrental@gmail.com</a></h3>
+                <h3> <a href="tel:+6281233334808">081-233-334-808</a> </h3>
               </div>
             </div>
-            <div className="col-lg-2">
+            <div className="col-sm-12 col-md-2 col-lg-2">
               <div className="penawaran">
                 <ul>
-                  <li>Our services</li>
-                  <li>Why Us</li>
-                  <li>Testimonial</li>
-                  <li>FAQ</li>
+                  <li><a href="/#ourservices">Our services</a></li>
+                  <li><a href="/#whyus">Why Us</a></li>
+                  <li><a href="/#testimonials">Testimonials</a></li>
+                  <li><a href="/#faq">FAQ</a></li>
                 </ul>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-sm-12 col-md-4 col-lg-4">
               <h3>Connect with us</h3>
               <div className="sosmed">
                 <ul>
@@ -64,11 +64,11 @@ function Footer() {
               </div>
             </div>
 
-            <div className="col-lg-3">
+            <div className="col-sm-12 col-md-3 col-lg-3">
               <div className="copyright">
                 <h3>Copyright Binar 2022</h3>
                 <div className="binar2022">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="/" >
                     <img src={Logo} alt="Bcr" />
                   </a>
                 </div>

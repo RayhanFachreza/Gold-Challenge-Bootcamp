@@ -1,96 +1,101 @@
 .testimonial {
   padding-top: 85px;
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .testi h2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: black;
-    margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: black;
+  margin-bottom: 16px;
 }
 
 .testi p {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
 }
 
 .box-testimonial {
-    /* height: 270px !important; */
-    padding: 69px 32px 69px 45px;
-    background: #F1F3FF;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    margin: 0;
+  /* height: 270px !important; */
+  padding: 69px 32px 69px 45px;
+  background: #F1F3FF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin: 0;
 }
 
 .boxflex {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-.box-testimonial .boxgambar  {
-    display: flex;
-    align-items: center;
+.box-testimonial .boxgambar {
+  display: flex;
+  align-items: center;
 }
 
 .box-testimonial .boxtext {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.box-testimonial h4{ 
-    margin: 8px 0px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
+.box-testimonial h4 {
+  margin: 8px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .box-testimonial h3 {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .button-slider {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 
 
 .carousel .slick-prev {
-    position: absolute !important;
-    top: 100%;
-    left: 48%;
-    margin-top: 23px !important;
-}
-.carousel .slick-next {
-    position: absolute !important;
-    top: 100% !important;
-    right: 48%;
-    display: block !important ; 
-    margin-top: 23px;
+  position: absolute !important;
+  top: 100%;
+  left: 48%;
+  margin-top: 23px !important;
 }
 
-.slick-slide > div {
-    margin: 0 10px;
-  }
-  .slick-list {
-    margin: 0 -10px;
-  }
+.carousel .slick-next {
+  position: absolute !important;
+  top: 100% !important;
+  right: 48%;
+  display: block !important;
+  margin-top: 23px;
+}
+
+
+.slick-slide>div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
 
 @media (max-width:540px) {
-.testimonial {
-  padding-top: 10px;
+  .testimonial {
+    padding-top: 10px;
     padding-bottom: 70px;
-}
+  }
+
   .carousel {
     max-width: 100%;
   }
+
   .box-testimonial {
     width: 100%;
   }
@@ -102,31 +107,34 @@
   .carousel .slick-next {
     right: 42% !important;
   }
-    
-  .box-testimonial .boxgambar  {
+
+  .box-testimonial .boxgambar {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
+
   .row .boxtext .bintang {
     margin: auto;
     margin-bottom: 18px;
-    }
+  }
 
 }
 
 @media (max-width:996px) {
-  .box-testimonial .boxgambar  {
+  .box-testimonial .boxgambar {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
+
   .row .boxtext .bintang {
     margin: auto;
     margin-bottom: 18px;
-    }
-  
-  .row .boxtext h4, .row .boxtext h3 {
+  }
+
+  .row .boxtext h4,
+  .row .boxtext h3 {
     text-align: left;
   }
 

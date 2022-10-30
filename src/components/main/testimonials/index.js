@@ -13,15 +13,15 @@ const Testimonials = () => {
     dots: false,
     infinite: true,
     centerMode: true,
-    speed: 500,
-    // centerPadding: "20px",
     centerPadding: "350px",
-    // slidesToShow: 2.33,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     nextArrow: <img src={Right} alt="" title="Next" />,
-    prevArrow: <img src={Left} alt="" title="Previos" />,
+    prevArrow: <img src={Left} alt="" title="Previous" />,
     responsive: [
       {
         breakpoint: 1024,
@@ -53,6 +53,8 @@ const Testimonials = () => {
       },
     ],
   };
+
+  
 
   return (
     <section className="testimonial" id="testimonials">

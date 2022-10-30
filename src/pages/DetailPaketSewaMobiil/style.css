@@ -1,0 +1,120 @@
+.detailsewapaket {
+    background: #F1F3FF;
+    padding-bottom: 130px;
+}
+
+.paketsewa {
+    margin-top: 40px;
+}
+
+.sewatext {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 40px;
+
+}
+
+.cardkanan .buttonkembali {
+    display: flex;
+    justify-content: end;
+}
+
+.cardkanan .btn {
+    padding: 12px 0px;
+    width: 50%;
+    justify-content: center;
+    margin-top: 20px;
+    background: #5CB85F;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+
+.sewatext h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px;
+}
+
+.sewatext h3 {
+    margin: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.sewatext li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 175%;
+    color: #8A8A8A;
+    list-style: disc;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.carddetails {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.carddetails img {
+    width: 100%;
+    padding: 50px 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cardtext {
+    margin-left: 30px;
+}
+
+.carddetails h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+
+.gambarorang img {
+    padding: 0;
+    width: 12px;
+    margin-right: 10px;
+}
+
+.orang {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+
+.orang p {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    color: #8A8A8A;
+}
+
+.hargatotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+
+@media (max-width:540px) {
+    .paketsewa .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/cari-mobil" element={<CariMobil />} />
-        <Route path="/detail-paket-sewa-mobil" element={<DetailPaketSewa />} />
+        <Route path="/sewa-mobil/:id" element={<DetailPaketSewa />} />
         <Route path="/hasil-Pencarian" element={<HasilPencarian />} />
       </Routes>
       <Footer />

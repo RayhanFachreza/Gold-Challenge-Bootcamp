@@ -163,9 +163,24 @@
 
 
 .card img {
-    width: 100%;
-    object-fit: contain;
-    padding: 20px;
+    padding: 50px 30px;
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+}
+
+.pilihcar p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.pilihcar .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
