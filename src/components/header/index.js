@@ -4,7 +4,7 @@ import Logo from "../../assets/img/logo.svg";
 import Burger from "../../assets/img/burgermenu.svg";
 import Bcr from "./assets/BCR.svg";
 import Close from "./assets/Close.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Header = () => {
   const [sideVisible, setSideVisible] = useState(false);
@@ -19,18 +19,22 @@ const Header = () => {
                 <img src={Logo} alt="" />
               </a>
             </div>
+            {
             <div className="burger">
             <a href="/">
               <img src={Logo} alt="" />
             </a>
-              <img onClick={() => setSideVisible(true)} src={Burger} alt="" />
+            {window.location.pathname === "/" && <img onClick={() => setSideVisible(true)} src={Burger} alt="" />}
             </div>
+            }
           </div>
           <div
             onClick={() => setSideVisible(false)}
             className={`overlay-bg ${sideVisible ? "menu-active" : ""}`}
           ></div>
           <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 kanan">
+          {window.location.pathname === "/" &&
+          
             <div className={`sidebar ${sideVisible ? "menu-active" : ""}`}>
               <div className="top-sidebar">
                 <a href="/">
@@ -53,6 +57,8 @@ const Header = () => {
                 </li>
               </ul>
             </div>
+
+          }
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Heroimage from "./asset/hero-image.png";
 import "./style.css";
 
@@ -16,9 +16,10 @@ const Herosection = () => {
             </p>
 
             {window.location.pathname === "/" && (
-              <Link className="btn" role="button" to="/cari-mobil">
+              <a className="btn" role="button" href="/cari-mobil">
                 Mulai Sewa Mobil
-              </Link>
+              </a>
+              
             )}
           </div>
           <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 hero-kanan">

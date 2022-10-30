@@ -13,14 +13,14 @@ const CariMobil = () => {
   // const [isSearch, setIsSearch] = useState(false);
   // const [cariActive,setCariActive] = useState(false);
 
-  const [cars, setCars] = useState([]);
+  const [cars, setCars] = useState(null);
 
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
   const [minPrice, setMinPrice] = useState(null);
   const [maxPrice, setMaxPrice] = useState(null);
   // const [price, setPrice] = useState(null);
-  const [isRented, setIsRented] = useState(false);
+  const [isRented, setIsRented] = useState();
 
   const handlePrice = (e) => {
     const val = e.target.value;
@@ -42,10 +42,10 @@ const CariMobil = () => {
       name,
       minPrice,
       maxPrice,
-      isRented: Boolean(isRented),
+      isRented: isRented === "disewa" ? true : false,
       category,
       page: 1,
-      pageSize: 9 ,
+      pageSize: 9,
     };
 
     axios.get(`${process.env.REACT_APP_API_URL}/customer/v2/car`, { params })
@@ -133,14 +133,15 @@ const CariMobil = () => {
                     <Form.Select
                       aria-label="Default select example"
                       className="selecttext"
+                      onChange={(e) => setIsRented(e.target.value)}
                     >
                       <option hidden>Status </option>
-                      <option value="true"> Disewa </option>
-                      <option value="false"> Ready </option>
+                      <option value="disewa"> Disewa </option>
+                      <option value="ready"> Ready </option>
                     </Form.Select>
                   </div>
                   <div className="tombolcari">
-                    <Button onClick={() => handleSubmit()}> Cari Mobil </Button>
+                    <Button type onClick={() => handleSubmit()}> Cari Mobil </Button>
                   </div>
                 </div>
               </div>
@@ -148,8 +149,9 @@ const CariMobil = () => {
           </div>
         </div>
         {/*  */}
+
         <div className="row cardsection g-4">
-          {cars.length > 0 &&
+          {cars && cars.length > 0 &&
             cars.map((car) => (
               <div className="col-lg-4 col-xl-4 col-sm-12 col-md-6 ">
                 <div className="card p-3">
@@ -173,6 +175,9 @@ const CariMobil = () => {
                 </div>
               </div>
             ))}
+          {cars && cars.length === 0 && 
+          <div className="error"><h2>Yahh.. Datanya ga ketemu :( </h2></div>
+          }
         </div>
       </div>
     </section>

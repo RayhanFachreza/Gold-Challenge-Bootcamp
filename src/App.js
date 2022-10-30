@@ -5,7 +5,6 @@ import Header from "./components/header";
 import HomePage from "./pages/HomePage";
 import CariMobil from "./pages/CariMobil";
 import DetailPaketSewa from "./pages/DetailPaketSewaMobiil";
-import HasilPencarian from "./pages/HasilPencarian";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

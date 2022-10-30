@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const SewaMobil = () => {
   return (
@@ -14,9 +14,9 @@ const SewaMobil = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
-              <Link to="/cari-mobil" className="btn" role="button">
+              <a href="/cari-mobil" className="btn" role="button">
                 Mulai Sewa Mobil
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -15,8 +15,8 @@ const Testimonials = () => {
     centerMode: true,
     centerPadding: "350px",
     autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 500,
+    autoplaySpeed: 4000,
+    speed: 2000,  
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -160,3 +160,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
